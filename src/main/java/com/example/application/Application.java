@@ -5,6 +5,7 @@ import com.vaadin.flow.router.Route;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.stereotype.Component;
 import org.vaadin.artur.helpers.LaunchUtil;
 
 /**
@@ -14,6 +15,7 @@ import org.vaadin.artur.helpers.LaunchUtil;
 @NpmPackage(value = "lumo-css-framework", version = "^4.0.10")
 @NpmPackage(value = "line-awesome", version = "1.3.0")
 @Route ("show-real-time-updating-data")
+@Component
 
 public class Application extends SpringBootServletInitializer {
 
